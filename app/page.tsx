@@ -88,7 +88,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
-                  href="#writings"
+                  href="/writings"
                   className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all hover:scale-105 font-medium inline-flex items-center gap-2"
                 >
                   <svg
