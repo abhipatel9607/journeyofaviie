@@ -1,0 +1,157 @@
+---
+title: "Collaborative Note-Taking & Workspace Platform"
+description: "A feature-rich productivity application built with React and Firebase, offering hierarchical content organization, nested pages, rich text editing, and workspace management."
+date: "2024"
+tags:
+  ["React", "Vite", "Firebase", "Firestore", "Google Auth", "Rich Text Editor"]
+isFeatured: false
+coverImage: ""
+link: "http://notion-app-mountblue-group-project.netlify.app/"
+github: "https://github.com/abhipatel9607/notion_app"
+---
+
+> _A modern productivity platform demonstrating complex hierarchical data structures, real-time collaboration, and intuitive content organization._
+
+**🌐 Live Preview:** [notion-app-mountblue-group-project.netlify.app](http://notion-app-mountblue-group-project.netlify.app/)  
+**📂 Source Code:** [GitHub Repository](https://github.com/abhipatel9607/notion_app)
+
+---
+
+## 💡 What I Built
+
+A **full-featured collaborative note-taking platform** built with React and Firebase, designed to help users organize knowledge, manage projects, and structure content hierarchically. This application demonstrates advanced concepts in state management, recursive data structures, and real-time synchronization.
+
+### Core Features Implemented
+
+- **Google OAuth Integration** — Seamless authentication using Firebase Google Sign-In providing secure, password-less access with automatic user profile creation
+
+- **Multi-Workspace Architecture** — Built workspace management system allowing users to create multiple isolated workspaces, each with its own set of pages and content organization
+
+- **Hierarchical Page System** — Implemented unlimited nested page structure with parent-child relationships, enabling users to organize content in tree-like hierarchies of any depth
+
+- **Rich Page Customization** — Developed page personalization features including custom cover images, emoji icons, and page titles for visual organization and quick identification
+
+- **Tree Navigation Sidebar** — Created collapsible sidebar displaying full page hierarchy with expand/collapse functionality, drag-and-drop reordering, and visual nesting indicators
+
+- **Breadcrumb Navigation** — Implemented dynamic breadcrumb trail showing page hierarchy from workspace root to current page, enabling quick navigation up the hierarchy
+
+- **Rich Content Editor** — Built content creation system supporting multiple content types including H1/H2 headings, paragraphs, and other text elements with proper formatting
+
+- **Real-Time Data Persistence** — Integrated Firebase Firestore for automatic content saving with real-time synchronization ensuring no data loss and instant updates
+
+- **Workspace Dashboard** — Created Trello-inspired workspace overview with card-based layout for easy workspace management and quick access
+
+- **Individual Workspace Mode** — Implemented single-player functionality allowing focused work without collaboration distractions
+
+- **Responsive Interface** — Designed mobile-friendly layout adapting to different screen sizes while maintaining full functionality
+
+- **Page Management Operations** — Built complete CRUD operations for pages including create, read, update, delete with proper authorization checks
+
+## 🛠 Tech Stack
+
+**Frontend Framework:** React 18 with Vite build tool  
+**State Management:** React Context API and hooks  
+**Database:** Firebase Firestore (NoSQL)  
+**Authentication:** Firebase Authentication with Google OAuth  
+**Hosting:** Netlify with continuous deployment  
+**Routing:** React Router for SPA navigation  
+**Styling:** Modern CSS with responsive design  
+**Data Structure:** Recursive tree structures for nested pages  
+**Real-Time Sync:** Firestore real-time listeners
+
+## 🚀 Why This Project Matters
+
+This project demonstrates my ability to:
+
+- Build **complex hierarchical data structures** with unlimited nesting depth
+- Implement **recursive algorithms** for tree traversal and rendering
+- Design **intuitive information architecture** for knowledge management
+- Handle **real-time data synchronization** across multiple clients
+- Create **performant React applications** with optimal re-rendering strategies
+- Integrate **Firebase services** (Auth, Firestore) in production applications
+- Build **collaborative platforms** with proper data isolation
+- Write **maintainable component hierarchies** for complex UIs
+- Implement **OAuth authentication flows** securely
+
+## 🏗 Architecture Highlights
+
+- **Recursive Component Architecture** — Built reusable page tree components that render themselves recursively to display unlimited nesting levels
+
+- **Firebase Data Modeling** — Designed Firestore collections for workspaces, pages, and content with proper relationships using document references and subcollections
+
+- **Context-Based State** — Implemented React Context for global state management of current workspace, user session, and navigation state
+
+- **Optimistic Updates** — Applied optimistic UI updates for instant feedback while Firebase operations complete in background
+
+- **Tree Data Structure** — Utilized parent-child relationships with efficient algorithms for tree traversal, insertion, and rendering
+
+- **Route Protection** — Protected routes requiring authentication with route guards redirecting unauthenticated users
+
+- **Component Composition** — Structured UI using composable components for workspace cards, page items, content blocks, and navigation elements
+
+- **Firebase Listeners** — Leveraged Firestore real-time listeners for live updates when pages or content changes
+
+- **Lazy Loading** — Implemented code splitting and lazy loading for optimal bundle size and faster initial load
+
+## 📊 Technical Achievements
+
+- **Unlimited Nested Pages** with recursive rendering
+- **Google OAuth** integration with Firebase
+- **Real-Time Synchronization** across all users
+- **Tree Navigation** with expand/collapse functionality
+- **Breadcrumb Trail** showing page hierarchy
+- **Cover Images & Icons** for page customization
+- **Workspace Management** with Trello-style UI
+- **Rich Text Content** with multiple heading levels
+- **Data Persistence** with Firestore
+- **Responsive Design** across devices
+- **Production Deployed** on Netlify
+
+## 🎯 Key Technical Challenges Solved
+
+### 1. Infinite Nested Page Hierarchy
+
+Designed a recursive component system that renders page trees of unlimited depth while maintaining performance and proper state management at each level.
+
+### 2. Real-Time Tree Updates
+
+Implemented efficient Firestore listeners that update the page tree in real-time when pages are added, moved, or deleted without requiring full tree refresh.
+
+### 3. Breadcrumb Generation
+
+Built an algorithm to traverse from child page up to root workspace, generating accurate breadcrumb trails for navigation context.
+
+### 4. Workspace Isolation
+
+Ensured proper data isolation between workspaces while sharing user authentication, requiring careful Firestore query design and security rules.
+
+### 5. Complex State Management
+
+Managed application state across nested components including current workspace, selected page, editor state, and navigation state using Context API effectively.
+
+## 🌟 Application Capabilities
+
+- **Knowledge Organization** — Structure information in hierarchical page trees
+- **Multi-Workspace Support** — Separate different projects or areas
+- **Visual Customization** — Add covers and icons to pages
+- **Quick Navigation** — Sidebar tree and breadcrumbs for easy browsing
+- **Content Creation** — Write and format notes with headings and paragraphs
+- **Auto-Save** — Automatic content persistence with Firestore
+- **Secure Access** — Google authentication for user accounts
+- **Real-Time Sync** — See changes instantly across devices
+- **Workspace Overview** — Dashboard with all workspaces at a glance
+- **Focus Mode** — Individual workspace mode for distraction-free work
+
+## 💡 Use Cases
+
+- **Personal Knowledge Base** — Organize personal notes and learnings
+- **Project Documentation** — Structure project docs hierarchically
+- **Meeting Notes** — Quick note-taking with organized structure
+- **Content Planning** — Plan and outline content with nested pages
+- **Study Notes** — Organize academic material by subject and topic
+
+---
+
+**Try the platform:** [notion-app-mountblue-group-project.netlify.app](http://notion-app-mountblue-group-project.netlify.app/)
+
+_This project showcases advanced React patterns, Firebase integration, and complex data structure management in a production environment._

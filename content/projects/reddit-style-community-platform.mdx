@@ -1,0 +1,161 @@
+---
+title: "Reddit-Style Community Platform"
+description: "A full-featured social platform built with Angular and Firebase, featuring real-time interactions, user authentication, nested comments, and community management."
+date: "2024"
+tags:
+  [
+    "Angular",
+    "TypeScript",
+    "Firebase",
+    "Firestore",
+    "Authentication",
+    "Real-time",
+  ]
+isFeatured: true
+coverImage: ""
+link: "https://reddit-app-abhishek.netlify.app/"
+github: "https://github.com/abhipatel9607/reddit_app"
+---
+
+> _A full-stack social platform demonstrating complex state management, real-time data sync, and scalable architecture._
+
+**🌐 Live Preview:** [reddit-app-abhishek.netlify.app](https://reddit-app-abhishek.netlify.app/)  
+**📂 Source Code:** [GitHub Repository](https://github.com/abhipatel9607/reddit_app)
+
+---
+
+## 💡 What I Built
+
+A **fully functional social community platform** inspired by Reddit, built from scratch with Angular 15 and Firebase. This application handles complex user interactions, real-time data synchronization, and multi-level content hierarchies, demonstrating proficiency in building production-ready web applications.
+
+### Core Features Implemented
+
+- **Complete Authentication System** — Built secure user authentication with Firebase Auth supporting sign-up, login, session management, and protected routes with authentication guards
+
+- **Community Management** — Implemented full subreddit creation and management system where authenticated users can create, customize, and moderate their own communities
+
+- **Multi-Format Post Creation** — Developed three distinct post types (text, link, and image) with proper validation, Firebase Storage integration for images, and rich content display
+
+- **Real-Time Voting System** — Built sophisticated upvote/downvote functionality for both posts and comments with real-time vote count updates and user vote tracking to prevent duplicate voting
+
+- **Nested Comment System** — Implemented threaded comment functionality with add, edit, delete operations, proper nesting structure, and user ownership verification for edit permissions
+
+- **Post Detail Pages** — Created comprehensive post view with full content display, author information, timestamps, vote counts, and integrated comment section with real-time updates
+
+- **Multiple Feed Views** — Developed dynamic post feeds with multiple sorting options (by votes descending, by latest posts) and filtering by subreddit
+
+- **User Authorization** — Implemented granular permissions system ensuring users can only edit/delete their own content while maintaining proper access control throughout the application
+
+- **Firestore Data Architecture** — Designed scalable database schema with collections for users, subreddits, posts, comments, and votes with proper relationships and query optimization
+
+- **Responsive Design** — Built mobile-first responsive interface ensuring smooth experience across all devices and screen sizes
+
+- **Image Upload System** — Integrated Firebase Storage for image uploads with progress tracking, validation, and automatic URL generation for post attachments
+
+- **Real-Time Sync** — Leveraged Firebase real-time capabilities to update vote counts, new comments, and content changes instantly across all connected clients
+
+## 🛠 Tech Stack
+
+**Frontend Framework:** Angular 15 with TypeScript  
+**State Management:** Angular Services and RxJS Observables  
+**Backend Services:** Firebase (BaaS)  
+**Authentication:** Firebase Authentication with JWT tokens  
+**Database:** Cloud Firestore (NoSQL)  
+**Storage:** Firebase Storage for image uploads  
+**Hosting:** Netlify with automatic deployments  
+**Routing:** Angular Router with route guards  
+**Forms:** Angular Reactive Forms with validation  
+**HTTP Client:** Angular HttpClient for API communication
+
+## 🚀 Why This Project Matters
+
+This project demonstrates my ability to:
+
+- Build **complex, full-stack applications** using modern frameworks and cloud services
+- Design and implement **scalable database schemas** with proper relationships in NoSQL databases
+- Handle **real-time data synchronization** across multiple clients
+- Implement **secure authentication and authorization** patterns
+- Manage **complex state** using Angular services and RxJS observables
+- Create **intuitive user experiences** for content-heavy applications
+- Write **maintainable TypeScript code** with proper typing and interfaces
+- Structure **large-scale Angular applications** with modular architecture
+- Integrate **multiple Firebase services** (Auth, Firestore, Storage) seamlessly
+
+## 🏗 Architecture Highlights
+
+- **Modular Angular Architecture** — Organized application into feature modules with lazy loading support, shared components, and service-based architecture
+
+- **Firebase Integration** — Complete Firebase setup with:
+
+  - Authentication service handling user sessions
+  - Firestore service managing database operations
+  - Storage service handling file uploads
+  - Proper error handling and loading states
+
+- **RxJS for Reactive Programming** — Extensive use of Observables for asynchronous operations, real-time data streams, and event handling
+
+- **Route Guards** — Implemented authentication guards to protect routes and ensure only logged-in users can access certain features
+
+- **Service Layer Pattern** — Created dedicated services for authentication, posts, comments, subreddits, and votes with clear separation of concerns
+
+- **Component Communication** — Proper parent-child communication using Input/Output decorators and service-based state sharing
+
+- **Firestore Query Optimization** — Implemented efficient queries with proper indexing, pagination support, and minimal data fetching
+
+- **Form Validation** — Reactive forms with custom validators, real-time validation feedback, and error handling
+
+- **TypeScript Interfaces** — Strongly typed data models for User, Post, Comment, Subreddit, and Vote entities
+
+## 📊 Technical Achievements
+
+- **Angular 15 Application** with modern best practices
+- **Firebase Integration** across Auth, Firestore, and Storage
+- **Real-Time Updates** using Firestore listeners
+- **Nested Comment System** with infinite depth support
+- **Multi-Format Posts** (text, link, image)
+- **Vote Tracking System** preventing duplicate votes
+- **User Permissions** with edit/delete authorization
+- **Multiple Sorting Options** for content feeds
+- **Responsive UI** working across all devices
+- **Image Upload Pipeline** with validation and storage
+- **Production Deployed** on Netlify with CI/CD
+
+## 🎯 Key Technical Challenges Solved
+
+### 1. Real-Time Vote Synchronization
+
+Implemented a system where votes update instantly across all users viewing the same post, while preventing users from voting multiple times and maintaining accurate vote counts even under concurrent updates.
+
+### 2. Nested Comment Threading
+
+Built a recursive comment structure allowing unlimited nesting depth with proper rendering, edit permissions, and efficient Firestore queries to fetch comment trees.
+
+### 3. Multi-Format Content Handling
+
+Created a unified post interface supporting three different content types (text, link, image) with type-specific validation, rendering, and storage strategies.
+
+### 4. Permission-Based UI
+
+Implemented conditional rendering throughout the app showing edit/delete buttons only to content owners while maintaining security at the service layer.
+
+### 5. Firebase Data Modeling
+
+Designed a NoSQL schema balancing normalization and denormalization for optimal read/write performance in a social platform context.
+
+## 🌟 Application Capabilities
+
+- **User Management** — Sign up, login, session persistence, profile management
+- **Community Creation** — Create and manage subreddits with custom names
+- **Content Publishing** — Post text, links, or images to communities
+- **Social Interactions** — Upvote, downvote, and comment on content
+- **Content Discovery** — Browse posts sorted by popularity or recency
+- **Personalization** — See only your content, track your votes
+- **Real-Time Updates** — Instant synchronization of all interactions
+- **Media Handling** — Upload and display images in posts
+- **Moderation Tools** — Edit or delete your own content
+
+---
+
+**Explore the platform:** [reddit-app-abhishek.netlify.app](https://reddit-app-abhishek.netlify.app/)
+
+_This project showcases full-stack development skills with Angular and Firebase, demonstrating the ability to build complex, production-ready applications._

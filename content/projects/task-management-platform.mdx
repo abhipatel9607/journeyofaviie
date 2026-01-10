@@ -1,0 +1,168 @@
+---
+title: "Task Management & Project Organization Platform"
+description: "A feature-rich project management application built with React, Firebase, and Chakra UI, offering intuitive drag-and-drop task organization with real-time collaboration."
+date: "2024"
+tags:
+  [
+    "React",
+    "Chakra UI",
+    "Firebase",
+    "Firestore",
+    "Drag and Drop",
+    "Task Management",
+  ]
+isFeatured: false
+coverImage: ""
+link: "https://trello-app-abhishek.netlify.app/"
+github: "https://github.com/abhipatel9607/trello_app"
+---
+
+> _An intuitive project management platform demonstrating complex UI interactions, real-time data sync, and beautiful design systems._
+
+**🌐 Live Preview:** [trello-app-abhishek.netlify.app](https://trello-app-abhishek.netlify.app/)  
+**📂 Source Code:** [GitHub Repository](https://github.com/abhipatel9607/trello_app)
+
+---
+
+## 💡 What I Built
+
+A **comprehensive task management platform** built with React and Firebase, designed to help teams organize projects, track progress, and collaborate efficiently. The application features an intuitive Kanban-style interface with drag-and-drop functionality, real-time synchronization, and a beautiful UI powered by Chakra UI.
+
+### Core Features Implemented
+
+- **Firebase Authentication** — Secure user authentication system with Firebase Auth supporting email/password and Google Sign-In for seamless access management
+
+- **Board Management System** — Complete board creation and management with customizable board names, descriptions, backgrounds, and user-specific board access
+
+- **List Organization** — Dynamic list creation within boards allowing users to organize workflow stages (e.g., To Do, In Progress, Done) with custom naming and ordering
+
+- **Card Management** — Full-featured card system supporting creation, editing, deletion, and movement between lists with detailed card information
+
+- **Drag-and-Drop Interface** — Implemented smooth drag-and-drop functionality allowing users to reorder cards within lists and move cards between different lists intuitively
+
+- **Real-Time Synchronization** — Leveraged Firestore real-time listeners ensuring all board changes, card movements, and updates sync instantly across all users viewing the same board
+
+- **User Authorization** — Built permission system ensuring users can only access and modify their own boards while maintaining proper data isolation in Firestore
+
+- **Responsive Design with Chakra UI** — Crafted beautiful, accessible interface using Chakra UI component library with consistent theming, responsive layouts, and smooth animations
+
+- **Board Visualization** — Created comprehensive board view displaying all lists and cards with proper spacing, visual hierarchy, and intuitive navigation
+
+- **State Management** — Implemented efficient state management using React hooks and Context API for board data, authentication state, and UI interactions
+
+- **Data Persistence** — Integrated Firestore for reliable data storage with proper error handling, loading states, and optimistic updates
+
+- **Routing & Navigation** — Built multi-page application using React Router with protected routes, board selection, and smooth navigation transitions
+
+## 🛠 Tech Stack
+
+**Frontend Framework:** React 18 with hooks  
+**UI Library:** Chakra UI for design system  
+**Database:** Firebase Firestore (NoSQL)  
+**Authentication:** Firebase Authentication (Email & Google)  
+**Drag and Drop:** React DnD or React Beautiful DnD  
+**Routing:** React Router for SPA navigation  
+**State Management:** React Context API and hooks  
+**Hosting:** Netlify with continuous deployment  
+**Real-Time Updates:** Firestore real-time listeners  
+**Code Quality:** ESLint for code standards
+
+## 🚀 Why This Project Matters
+
+This project demonstrates my ability to:
+
+- Build **production-ready task management systems** with complex user interactions
+- Implement **drag-and-drop functionality** with smooth animations and state updates
+- Design **intuitive user experiences** for productivity applications
+- Work with **design systems** (Chakra UI) for consistent, accessible interfaces
+- Handle **real-time data synchronization** across multiple concurrent users
+- Integrate **Firebase services** (Auth, Firestore) in React applications
+- Manage **complex state** across multiple components and features
+- Create **responsive layouts** that work seamlessly across devices
+- Write **clean, maintainable React code** following modern best practices
+
+## 🏗 Architecture Highlights
+
+- **Component-Based Architecture** — Structured application into reusable components (Board, List, Card, Header, Auth) with clear separation of concerns
+
+- **Firebase Service Layer** — Created dedicated service modules for authentication, Firestore operations, and board management with proper error handling
+
+- **Context-Based State** — Implemented React Context for global state including authentication status, current board, and user preferences
+
+- **Firestore Data Structure** — Designed efficient database schema with collections for users, boards, lists, and cards with proper relationships and indexes
+
+- **Drag-and-Drop Implementation** — Integrated drag-and-drop library with custom logic for card reordering and list transfers maintaining data consistency
+
+- **Protected Routes** — Implemented authentication guards ensuring only logged-in users can access boards and board data
+
+- **Real-Time Listeners** — Set up Firestore listeners that automatically update UI when board data changes from any client
+
+- **Chakra UI Theming** — Configured custom theme with color schemes, spacing, typography, and component variants for consistent design
+
+- **Optimistic Updates** — Applied optimistic UI updates for instant feedback while Firestore operations complete asynchronously
+
+- **Error Boundaries** — Implemented error handling and loading states throughout the application for robust user experience
+
+## 📊 Technical Achievements
+
+- **Drag-and-Drop System** with smooth animations
+- **Firebase Authentication** with multiple providers
+- **Real-Time Board Updates** across all users
+- **Chakra UI Integration** with custom theming
+- **Dynamic List Management** with CRUD operations
+- **Card Organization** between multiple lists
+- **User-Specific Boards** with proper isolation
+- **Responsive Layout** across all screen sizes
+- **Protected Routes** with authentication guards
+- **Production Deployed** on Netlify
+- **Clean Code Structure** with modular components
+
+## 🎯 Key Technical Challenges Solved
+
+### 1. Drag-and-Drop State Management
+
+Implemented complex state updates when cards are dragged between lists, ensuring proper index calculation, list updates, and Firestore synchronization without race conditions.
+
+### 2. Real-Time Multi-User Sync
+
+Handled concurrent updates from multiple users viewing the same board, preventing conflicts and ensuring consistent state across all clients using Firestore transactions.
+
+### 3. Efficient Firestore Queries
+
+Designed database structure and queries to minimize reads while maintaining real-time updates, using proper indexing and query optimization techniques.
+
+### 4. Dynamic Board Rendering
+
+Built flexible rendering system that handles boards with varying numbers of lists and cards while maintaining performance and smooth animations.
+
+### 5. Authentication State Persistence
+
+Implemented proper authentication state management with route protection, session persistence, and seamless login/logout flows.
+
+## 🌟 Application Capabilities
+
+- **Project Organization** — Create multiple boards for different projects
+- **Workflow Stages** — Define custom lists representing workflow stages
+- **Task Cards** — Create detailed cards for individual tasks
+- **Drag-and-Drop** — Move cards intuitively with smooth animations
+- **Real-Time Collaboration** — See updates instantly across all users
+- **Secure Access** — Firebase authentication with Google Sign-In
+- **Board Management** — View all boards, create new ones, delete old ones
+- **Responsive Design** — Work seamlessly on desktop, tablet, and mobile
+- **Beautiful UI** — Chakra UI components with consistent design
+- **Auto-Save** — Automatic persistence of all changes to Firestore
+
+## 💼 Use Cases
+
+- **Personal Task Management** — Track personal projects and to-dos
+- **Team Collaboration** — Coordinate team projects and workflows
+- **Project Planning** — Organize project phases and deliverables
+- **Sprint Management** — Track agile sprints and user stories
+- **Content Pipeline** — Manage content creation workflows
+- **Event Planning** — Organize event preparation tasks
+
+---
+
+**Try the platform:** [trello-app-abhishek.netlify.app](https://trello-app-abhishek.netlify.app/)
+
+_This project showcases advanced React patterns, Firebase real-time capabilities, and modern UI development with Chakra UI in a production-ready application._

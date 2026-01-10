@@ -1,0 +1,120 @@
+---
+title: "Pest Control Management System (SaaS Backend)"
+description: "A production-ready, multi-tenant SaaS backend built with Django and Django REST Framework, designed to manage end-to-end operations for pest control businesses."
+date: "2024"
+tags:
+  [
+    "Django",
+    "Django REST Framework",
+    "PostgreSQL",
+    "JWT",
+    "REST APIs",
+    "SaaS",
+    "Backend",
+  ]
+isFeatured: true
+coverImage: ""
+---
+
+> _A real-world SaaS backend focused on scalability, clean architecture, and business-driven API design._
+
+**⚠️ This is a Private project.** Contact me for Preview this project or Source Code.
+
+---
+
+## 💡 What I Built
+
+This is a **production-ready, multi-tenant SaaS backend** designed to manage end-to-end operations for pest control businesses. The system enables multiple businesses to operate securely on a single platform with complete data isolation.
+
+### Core Features Implemented
+
+- **Multi-tenant Architecture** — Designed a secure, scalable architecture enabling multiple businesses to operate independently on a single platform with full data isolation using tenant-aware middleware and schema separation
+
+- **Role-Based Access Control (RBAC)** — Implemented comprehensive permission system with JWT authentication supporting SuperAdmin, Admin, Manager, and Technician roles with granular permissions, custom decorators, and permission-based API views
+
+- **Advanced Client Management** — Built complete CRM-style client management system handling individual, commercial, and industrial customers with detailed profile management, service history tracking, contact management, and custom fields
+
+- **Service Lifecycle Management** — Developed end-to-end service management including custom service types, intelligent scheduling with conflict detection, real-time execution tracking, technician assignment, status workflows, and completion verification
+
+- **AMC Contract System** — Implemented Annual Maintenance Contract functionality with flexible recurring service scheduling, automated billing cycles, contract renewal workflows, and proactive service reminders
+
+- **Intelligent Inventory Management** — Built comprehensive inventory tracking system with multi-location support, usage monitoring per service, consumption analytics, automated low-stock alerts, and purchase order management
+
+- **Complete Invoice & Payment System** — Designed full financial module with GST/tax calculation, multiple payment methods, partial payment tracking, overdue invoice management, automated payment reminders, and receipt generation
+
+- **Modular Architecture** — Structured the entire project using 8+ modular Django apps (accounts, clients, services, inventory, billing, reports, notifications) with environment-based settings for maximum scalability and maintainability
+
+- **Database Optimization** — Integrated PostgreSQL with 25+ well-defined relational models, optimized queries using select_related/prefetch_related, proper indexing, and database-level constraints for data integrity
+
+- **API Documentation** — Auto-generated API documentation using Django REST Framework's browsable API interface with detailed endpoint descriptions, request/response examples, and authentication requirements
+
+- **Notification System** — Built automated notification system for service reminders, low stock alerts, payment due notifications, and contract renewals using email and in-app notifications
+
+- **Advanced Reporting** — Implemented business intelligence features including revenue reports, service completion metrics, technician performance tracking, inventory consumption analysis, and client engagement statistics
+
+## 🛠 Tech Stack
+
+**Backend Framework:** Django 4.x, Django REST Framework 3.x  
+**Database:** PostgreSQL 14+ with PostGIS extensions  
+**Authentication:** JWT (JSON Web Tokens) with refresh token rotation  
+**API Design:** RESTful APIs with versioning support  
+**Architecture:** Multi-tenant SaaS with tenant-aware middleware  
+**Caching:** Redis for session management and performance optimization  
+**Task Queue:** Celery for background jobs and scheduled tasks  
+**Storage:** AWS S3 for file uploads and document management  
+**Security:** Django security middleware, CORS configuration, rate limiting  
+**Code Quality:** PEP 8 compliant, pre-commit hooks, comprehensive test coverage
+
+## 🚀 Why This Project Matters
+
+This project demonstrates my ability to:
+
+- Build **real-world SaaS systems** with production-grade quality
+- Design **scalable backend architectures** that can grow with business needs
+- Translate **complex business workflows into clean, maintainable APIs**
+- Write **production-grade code** following best practices and industry standards
+- Handle **multi-tenant data isolation** and security at scale
+- Implement **comprehensive business logic** including billing, contracts, and inventory management
+
+## 🏗 Architecture Highlights
+
+The system is built with:
+
+- **Modular Django Apps** — Each business domain (accounts, clients, services, inventory, billing, reports, notifications, analytics) is separated into independent apps with clear boundaries and responsibilities
+
+- **Environment-Based Configuration** — Different settings for development, staging, and production environments with proper secret management and environment variable handling
+
+- **Secure Multi-Tenancy** — Complete data isolation between tenant organizations using middleware-based tenant detection, schema separation, and row-level security
+
+- **Relational Data Modeling** — 25+ well-structured PostgreSQL tables with proper relationships (OneToOne, ForeignKey, ManyToMany), constraints, indexes, and database-level validations
+
+- **API-First Design** — All functionality exposed through clean, versioned REST APIs with proper serialization, pagination, filtering, and search capabilities
+
+- **Authentication & Authorization** — JWT-based stateless authentication with refresh token rotation, role-based permissions, object-level permissions, and API rate limiting
+
+- **Background Task Processing** — Celery workers handling async operations like email notifications, report generation, scheduled service reminders, and data aggregation
+
+- **File Management** — AWS S3 integration for scalable storage of invoices, service reports, client documents, and uploaded images
+
+- **Caching Strategy** — Redis caching for frequently accessed data, session management, and API response optimization reducing database load
+
+- **Error Handling & Logging** — Comprehensive exception handling with custom error responses, structured logging, and monitoring integration
+
+- **Code Organization** — Clean separation of concerns with models, serializers, views, services, and utilities in dedicated modules following Django best practices
+
+## 📊 Technical Achievements
+
+- **25+ Database Models** with optimized relationships and queries
+- **50+ API Endpoints** covering all business operations
+- **8 Modular Django Apps** for maintainable architecture
+- **Multi-level Permission System** with 4 distinct user roles
+- **Automated Background Jobs** for notifications and scheduled tasks
+- **S3-based File Management** for scalable document storage
+- **Redis Caching Layer** for performance optimization
+- **Test Coverage** with unit and integration tests
+- **API Documentation** with browsable interface
+- **Production-Ready** with proper error handling and logging
+
+---
+
+**Note:** This is a private commercial project. If you'd like to see a demo, discuss the architecture, or review the codebase, please get in touch.
