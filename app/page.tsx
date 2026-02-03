@@ -37,7 +37,7 @@ export default function Home() {
       icon: "💪",
       title: "Fitness & Coaching",
       description:
-        "National Level Badminton Player (2015-2022) and professional coach. Discipline from sports fuels my approach to life, code, and continuous growth.",
+        "National Level Badminton Player and professional coach (2015-2022). Discipline from sports fuels my approach to life, code, and continuous growth.",
     },
     {
       icon: "✍️",
@@ -88,7 +88,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <a
-                  href="/writings"
+                  href="#writings"
                   className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all hover:scale-105 font-medium inline-flex items-center gap-2"
                 >
                   <svg
@@ -409,7 +409,7 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                   <div>
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                      Software Engineer Trainee
+                      Software Developer Engineer
                     </h3>
                     <p className="text-xl text-blue-400 font-semibold mb-2">
                       MountBlue Technologies
@@ -581,15 +581,18 @@ export default function Home() {
 
       {/* Writings/Stories Section */}
       {featuredWritings.length > 0 && (
-        <section id="writings" className="py-20 px-6">
+        <section
+          id="writings"
+          className="py-20 px-6 bg-gradient-to-b from-gray-900/30 to-transparent"
+        >
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-4 inline-flex items-center gap-3">
                 <span className="text-blue-400 text-5xl">✍️</span>
                 Stories & Reflections
               </h2>
-              <p className="text-xl text-gray-300">
-                Thoughts on life, spirituality, and lived experience
+              <p className="text-xl text-gray-300 mb-2">
+                Thoughts on life, spirituality, and the moments that shaped us.
               </p>
             </div>
 
@@ -615,15 +618,22 @@ export default function Home() {
                       </div>
                     )}
                     <div className="p-8 flex flex-col flex-grow">
-                      <div className="text-xs uppercase tracking-wide text-blue-400 mb-3">
-                        {writing.frontmatter.writingType}
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="text-xs uppercase tracking-wide text-blue-400">
+                          {writing.frontmatter.writingType}
+                        </div>
+                        {writing.frontmatter.isNew && (
+                          <span className="px-2.5 py-1 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg">
+                            New
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors leading-tight">
                         {writing.frontmatter.title}
                       </h3>
                       <p className="text-sm text-gray-400 mb-4">
                         {new Date(
-                          writing.frontmatter.publishedAt
+                          writing.frontmatter.publishedAt,
                         ).toLocaleDateString("en-IN", {
                           year: "numeric",
                           month: "long",

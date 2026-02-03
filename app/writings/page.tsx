@@ -6,13 +6,63 @@ export default function WritingsPage() {
   const writings = getWritings();
 
   return (
-    <main className="min-h-screen p-6">
+    <main className="min-h-screen">
+      {/* Enhanced Header with Breadcrumb and Gradient */}
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Writings</h1>
-        <p className="text-xl text-gray-300 mb-12">
-          Thoughts on life, spirituality, and moments that matter.
-        </p>
+        {/* Breadcrumb */}
+        <nav className="md:hidden flex items-center gap-2 text-sm text-gray-400 mb-8 bg-gray-900/90 px-6 py-1.5 w-full">
+          <Link href="/" className="hover:text-blue-400 transition-colors">
+            Home
+          </Link>
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          <span className="text-white font-medium">Writings</span>
+        </nav>
+        <div className="max-w-6xl mx-auto px-6 py-12">
+          {/* Page Title */}
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+              All Writings
+            </h1>
+            <p className="text-xl text-gray-300 mb-4">
+              Thoughts on life, spirituality, and the moments that shaped us.
+            </p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700/50">
+              <svg
+                className="w-5 h-5 text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              <span className="text-gray-300 font-medium">
+                {writings.length}{" "}
+                {writings.length === 1 ? "Writing" : "Writings"}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      {/* Writings Grid */}
+      <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {writings.length === 0 ? (
             <p className="text-gray-400">No writings yet. Check back soon.</p>
@@ -39,15 +89,22 @@ export default function WritingsPage() {
                       </div>
                     )}
                     <div className="p-8 flex flex-col flex-grow">
-                      <div className="text-xs uppercase tracking-wide text-blue-400 mb-3">
-                        {writing.frontmatter.writingType}
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="text-xs uppercase tracking-wide text-blue-400">
+                          {writing.frontmatter.writingType}
+                        </div>
+                        {writing.frontmatter.isNew && (
+                          <span className="px-2.5 py-1 text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg">
+                            New
+                          </span>
+                        )}
                       </div>
                       <h2 className="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors leading-tight">
                         {writing.frontmatter.title}
                       </h2>
                       <p className="text-sm text-gray-400 mb-4">
                         {new Date(
-                          writing.frontmatter.publishedAt
+                          writing.frontmatter.publishedAt,
                         ).toLocaleDateString("en-IN", {
                           year: "numeric",
                           month: "long",

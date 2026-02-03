@@ -16,6 +16,7 @@ export interface WritingFrontmatter {
   featured?: boolean;
   coverImage?: string;
   order?: number;
+  isNew?: boolean;
 }
 
 export interface ProjectFrontmatter {
